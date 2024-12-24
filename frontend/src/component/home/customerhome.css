@@ -1,0 +1,108 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.hero-section {
+  margin-top: 90px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 100px;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.products-section, .about-section, .contact-section {
+  padding: 50px 20px;
+}
+
+.products-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  top: 10px;
+}
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: white; /* Ensure the text is white */
+}
+
+.about-section{
+  background-color: black;
+  color: white;
+}
+
+.about-section p{
+  color: white;
+}
+
+/* Change h2 color to white */
+.about {
+  color: white !important; /* Set the color to white */
+}
+.about-section h2 {
+  color: white; /* Set the color to white */}
+
+.products-section h2{
+  color: white; /* Set the color to white */
+margin-top: 40px;}
+
+  .products-section{
+   
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(163,169,172,1) 100%, rgba(105,105,105,1) 100%);
+  }
+
+  .products-grid{
+    background-color: white;
+  }
+
+  

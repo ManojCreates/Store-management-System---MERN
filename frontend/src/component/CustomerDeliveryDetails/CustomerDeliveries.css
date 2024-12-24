@@ -1,0 +1,69 @@
+.uu-customer-deliveries-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.uu-deliveries-title {
+  text-align: center;
+  color: #2a9d8f;
+}
+
+.uu-search-input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.uu-search-button,
+.uu-download-button,
+.uu-whatsapp-button,
+.uu-email-button {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.uu-search-button:hover,
+.uu-download-button:hover,
+.uu-whatsapp-button:hover,
+.uu-email-button:hover {
+  background-color: #21867a;
+}
+
+.uu-no-results {
+  text-align: center;
+  color: #e63946;
+}
+
+.uu-customer-delivery-list {
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .uu-customer-deliveries-container {
+    padding: 15px;
+  }
+
+  .uu-search-input {
+    width: 100%;
+  }
+}
+
+/* Hide buttons when printing */
+@media print {
+  .uu-report-actions,
+  .uu-search-button {
+    display: none; /* Hide the buttons when printing */
+  }
+}

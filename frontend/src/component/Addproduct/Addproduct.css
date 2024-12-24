@@ -1,0 +1,86 @@
+/* Addproduct.css */
+
+/* Container for the entire Addproduct component */
+.addproduct-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+.addproduct-container h1 {
+  font-size: 2em;
+  color: #000; /* Changed to black */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.addproduct-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.addproduct-form label {
+  font-size: 1em;
+  color: #000 !important; /* Changed to black */
+  margin-bottom: 5px;
+}
+
+/* Input field styling */
+.addproduct-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  color: #000; /* Text color in input fields */
+}
+
+/* Dropdown styling */
+.addproduct-form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  appearance: none; /* Remove default arrow */
+  background-color: #ffffff; /* Background color */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><polygon points="0,0 5,5 10,0" fill="#555"/></svg>'); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Position of the arrow */
+  background-size: 10px; /* Size of the arrow */
+  color: #000; /* Text color in dropdown */
+}
+
+/* Button styling */
+.addproduct-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.addproduct-form button:hover {
+  background-color: #0056b3;
+}
+
+.addproduct-form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.9em;
+}

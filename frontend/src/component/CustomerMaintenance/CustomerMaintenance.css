@@ -1,0 +1,136 @@
+/* General container styling */
+h1 {
+    margin-top: 100px; /* Adjust this value as needed */
+    text-align: center; /* Optional: Center the heading */
+}
+.customer-maintenance-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customer-maintenance-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styles */
+.customer-maintenance-container h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph styling for details display */
+.customer-maintenance-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.customer-maintenance-container p strong {
+    color: #333;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+    gap: 15px; /* Space between the buttons */
+    margin-top: 20px;
+}
+
+/* Button styles */
+.link-button,
+.btn-delete {
+    display: inline-block;
+    width: 150px; /* Equal width for both buttons */
+    padding: 12px 24px; /* Consistent padding */
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Update button styling */
+.link-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete button styling */
+.btn-delete {
+    background-color: #ff4c4c;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #e04343;
+}
+
+/* Separator for spacing */
+.separator {
+    margin-top: 30px;
+    height: 1px;
+    background-color: #eee;
+    width: 100%;
+}
+
+/* Print media query */
+@media print {
+    .btn-delete,
+    .link-button,
+    .button-container {
+        display: none; /* Hide buttons when printing */
+    }
+
+    .customer-maintenance-container {
+        box-shadow: none; /* Remove shadow when printing */
+        background-color: white; /* Ensure white background for printing */
+    }
+
+    body {
+        background-color: white;
+    }
+}
+
+/* Media query for responsive behavior */
+@media (max-width: 768px) {
+    .customer-maintenance-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .customer-maintenance-container h1 {
+        font-size: 18px;
+    }
+
+    .customer-maintenance-container p {
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .link-button, .btn-delete {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}

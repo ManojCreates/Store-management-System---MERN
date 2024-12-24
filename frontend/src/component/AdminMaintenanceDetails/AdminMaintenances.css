@@ -1,0 +1,116 @@
+/* Main container styles */
+#admin-maintenance-container {
+    padding: 20px; /* Padding around the content */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Limit width of the container */
+    margin: 20px auto; /* Center the container with margin */
+}
+
+/* Title styles */
+#admin-maintenance-title {
+    font-size: 28px; /* Larger font size for the title */
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Input and button styles */
+.search-container {
+    display: flex; /* Flexbox layout for search and button */
+    justify-content: space-between; /* Space between input and button */
+    margin-bottom: 20px; /* Space below the search area */
+}
+
+#search-input {
+    padding: 10px; /* Padding for the input */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 4px; /* Rounded corners */
+    width: 75%; /* Input width */
+}
+
+/* Button styles */
+.btn-search {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for clickable button */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+/* Button hover effect */
+.btn-search:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Results styles */
+.results-container {
+    margin-top: 20px; /* Space above results */
+}
+
+.no-results {
+    font-size: 18px; /* Larger font size for no results message */
+    color: #dc3545; /* Bootstrap danger color for emphasis */
+}
+
+/* Button container styles */
+.button-container {
+    margin-top: 20px; /* Space above the buttons */
+}
+
+/* Download and Share buttons */
+.btn-download,
+.btn-whatsapp,
+.btn-email {
+    padding: 10px 15px; /* Padding for the buttons */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for clickable button */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    margin-right: 10px; /* Space between buttons */
+}
+
+/* Download button styles */
+.btn-download {
+    background-color: #28a745; /* Bootstrap success color */
+}
+
+.btn-download:hover {
+    background-color: #218838; /* Darker shade for hover effect */
+}
+
+/* WhatsApp button styles */
+.btn-whatsapp {
+    background-color: #25D366; /* WhatsApp green color */
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DAF4C; /* Darker shade for hover effect */
+}
+
+/* Email button styles */
+.btn-email {
+    background-color: #007BFF; /* Email color */
+}
+
+.btn-email:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Separator styles */
+.separator {
+    margin-top: 20px; /* Space above the separator */
+    height: 1px; /* Height of the separator */
+    background-color: #ddd; /* Light gray color */
+    margin-bottom: 20px; /* Space below the separator */
+}
+
+/* Hide buttons when generating reports */
+@media print {
+    .button-container {
+        display: none; /* Hide buttons in print view */
+    }
+}

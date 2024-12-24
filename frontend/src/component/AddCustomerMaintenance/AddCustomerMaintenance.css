@@ -1,0 +1,104 @@
+/* Container for form */
+#unique-maintenance-form-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the start vertically */
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Banner styling */
+#unique-maintanance-banner {
+   
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Adjust this based on your preference */
+    width: 50%; /* Adjust the width as necessary */
+    border-radius: 12px;
+    margin-right: 20px; /* Spacing between banner and form */
+}
+
+/* Form styling */
+#unique-maintenance-form {
+    margin-top: 200px;
+    margin-left: -550px;
+    margin-right: 250px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(105, 105, 105, 1) 100%);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for a more lifted look */
+    max-width: 550px;
+    width: 100%;
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+    color: white; /* Set form text color to white */
+}
+
+/* Heading styling */
+#unique-maintenance-heading {
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+    /* Move heading to the left */
+    text-align: center;          /* Aligns the text to the left */
+    margin-left: 200px;         /* Adjust this value as needed to move the heading more or less to the left */
+    position: relative;
+   
+}
+
+/* Input styles */
+.unique-form-input,
+.unique-form-select,
+.unique-form-textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Label styling */
+.unique-form-label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Button styling */
+.unique-submit-button {
+    width: 100%; /* Full width */
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Button hover effect */
+.unique-submit-button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Checkbox group styles */
+.unique-checkbox-group {
+    display: flex;
+    flex-direction: column; /* Stack checkboxes vertically */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.unique-checkbox-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Add space between checkbox items */
+}
+
+.unique-form-checkbox {
+    margin-right: 10px; /* Add space between checkbox and label */
+}

@@ -1,0 +1,207 @@
+/* Global Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.tt-admin-deliveries-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.tt-admin-deliveries-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Search Input */
+.tt-search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.tt-search-input:focus {
+    border-color: #2a9d8f;
+    box-shadow: 0 0 10px rgba(42, 157, 143, 0.2);
+}
+
+/* Search Button */
+.tt-search-button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 6px 15px; /* Reduced size */
+    border-radius: 20px;
+    border: none;
+    font-size: 0.85rem; /* Smaller font size */
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tt-search-button:hover {
+    background-color: #21867a;
+    box-shadow: 0 5px 15px rgba(42, 157, 143, 0.2);
+}
+
+/* No Results */
+.tt-no-results p {
+    color: #e63946;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Admin Delivery List */
+.tt-delivery-list {
+    margin-top: 30px;
+}
+
+.tt-admin-delivery-item {
+    background-color: #f4f4f4;
+    padding: 15px; /* Reduced padding */
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tt-admin-delivery-item:hover {
+    transform: scale(1.02);
+}
+
+/* Report Actions Section */
+.tt-report-actions {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 20px;
+    gap: 10px; /* Space between buttons */
+}
+
+.tt-report-actions button {
+    background-color: #e63946;
+    color: #fff;
+    padding: 8px 20px; /* Adjust button size */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 0.85rem; /* Smaller font size */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s;
+}
+
+.tt-download-button,
+.tt-whatsapp-button,
+.tt-email-button {
+    background-color: #2a9d8f !important; /* Primary color */
+}
+
+.tt-report-actions button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .tt-admin-deliveries-container {
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .tt-search-button,
+    .tt-report-actions button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    .tt-report-actions {
+        flex-direction: column;
+    }
+
+    .tt-report-actions button {
+        margin-bottom: 15px;
+    }
+}
+
+/* General styles for the buttons */
+.tt-email-button,
+.tt-whatsapp-button,
+.tt-download-button {
+  
+    padding: 10px 15px; /* Adjusted padding for a better look */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* More rounded corners for a softer look */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    font-size: 14px; /* Font size */
+    width: 120px; /* Reduced width */
+    text-align: center; /* Centered text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Hover effect */
+.tt-download-button:hover, 
+.tt-whatsapp-button:hover, 
+.tt-email-button:hover {
+    background-color: #21867a !important; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Active state */
+.tt-download-button:active, 
+.tt-whatsapp-button:active, 
+.tt-email-button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: none; /* Remove shadow when clicked */
+}
+
+/* Hide buttons when printing */
+@media print {
+    .tt-report-actions, .tt-search-input, .tt-search-button {
+        display: none;
+    }
+}
+/* Existing styles ... */
+
+/* Report Actions Section */
+.tt-report-actions {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px;
+    flex-direction: row; /* Ensure buttons are aligned horizontally */
+    gap: 10px; /* Optional: adds space between buttons */
+}
+
+/* Style for buttons */
+.tt-report-actions button {
+    flex: 1; /* Allow buttons to grow equally */
+}
+
+/* ... rest of your existing styles ... */

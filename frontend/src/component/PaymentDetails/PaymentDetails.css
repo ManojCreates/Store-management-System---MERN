@@ -1,0 +1,93 @@
+.payment-details-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ddd;
+  text-emphasis-color: #ddd;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #4CAF50; /* Green */
+  outline: none;
+}
+
+.success-message {
+  background-color: #dff0d8; /* Light green */
+  color: #3c763d; /* Dark green */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.edit-button, .save-button, .delete-button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button {
+  background-color: #ffa500; /* Orange */
+  color: white;
+}
+
+.save-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #ff8c00; /* Darker Orange */
+}
+
+.save-button:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Darker Red */
+}
+
+@media (max-width: 600px) {
+  .payment-details-container {
+    width: 90%;
+  }
+}

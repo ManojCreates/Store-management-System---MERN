@@ -1,0 +1,108 @@
+/* Container for the entire MyOrders page */
+#my-orders-container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+#my-orders-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Order card styles */
+.order-card {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(105, 105, 105, 1) 100%);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    color: white;
+}
+
+.order-card:hover {
+    transform: scale(1.02);
+}
+
+/* Styles for strong text inside the order card */
+.order-card strong {
+    color: #ffffff;
+}
+
+/* Action buttons */
+.order-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.order-actions button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.order-actions button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Clear history button */
+.clear-history-button {
+    background-color: #dc3545; /* Danger color */
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.clear-history-button:hover {
+    background-color: #c82333; /* Darker shade for hover effect */
+}
+
+/* Empty orders message */
+#empty-orders-message {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 50px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #my-orders-container {
+        padding: 15px;
+    }
+
+    .order-card {
+        padding: 10px;
+    }
+
+    .order-actions button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .clear-history-button {
+        font-size: 14px;
+    }
+}

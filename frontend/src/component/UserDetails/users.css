@@ -1,0 +1,19 @@
+/* users.css */
+.download-pdf-button {
+    padding: 10px 15px; /* Adjust vertical and horizontal padding */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    width: 150px; /* Set a fixed width for the button */
+    margin: 20px auto; /* Center the button */
+    display: block; /* Make it a block element for centering */
+  }
+  
+  .download-pdf-button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+  }
+  

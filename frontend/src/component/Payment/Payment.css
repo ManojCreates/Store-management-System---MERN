@@ -1,0 +1,86 @@
+/* Payment Container */
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color for contrast */
+  height: 100vh; /* Full height of the viewport */
+  position: relative; /* For absolute positioning of the total price */
+}
+
+/* Title */
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+  margin-top: 70px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Total Price */
+.total-price {
+  position: absolute;
+  left: 20px; /* Align to the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for the height of the element */
+  font-size: 2rem; /* Increased font size for better visibility */
+  color: #ffffff; /* White color for contrast */
+  background: linear-gradient(135deg, #007BFF, #00c6ff); /* Gradient background */
+  padding: 10px 20px; /* Padding for spacing around the text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5); /* Subtle shadow effect */
+  text-align: center; /* Center the text */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Adding a hover effect */
+.total-price:hover {
+  transform: translateY(-50%) scale(1.05); /* Slightly enlarge on hover */
+  background: linear-gradient(135deg, #0056b3, #0099cc); /* Darker gradient on hover */
+}
+
+
+/* Form styling */
+#payment-form {
+  background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(105, 105, 105, 1) 100%);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  max-width: 550px;
+  width: 100%;  
+  color: white;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between label and input */
+  color: #ffffff!important; /* Gold color for labels */
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styling */
+.pay-now-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+ 
+}

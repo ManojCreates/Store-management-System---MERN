@@ -1,0 +1,140 @@
+/* Container for form and image */
+#unique-delivery-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+    padding-top: 150px; /* Increased padding to move everything further down */
+    gap: 40px; /* Add space between form and image */
+}
+
+/* Form styling */
+.unique-delivery-form {
+    margin-top: 150px;
+    margin-left: -550px;
+    margin-right: 250px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(105, 105, 105, 1) 100%);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for a more lifted look */
+    max-width: 550px;
+    width: 100%;
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+    color: white !important; /* Set form text color to white */
+}
+
+.unique-delivery-form:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Elevated shadow on hover */
+}
+
+/* Heading styling */
+#unique-delivery-heading {
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+    /* Move heading to the left */
+    text-align: center;          /* Aligns the text to the left */
+    margin-left: 300px;         /* Adjust this value as needed to move the heading more or less to the left */
+    position: relative;
+}
+
+/* Label styling */
+.unique-form-label {
+    font-weight: bold; /* Bold text */
+    margin-top: 15px;
+    display: block;
+    color: white !important; /* Label text color */
+    font-size: 1.1rem;
+}
+.unique-form-input{
+    color: rgb(0, 0, 0) !important;
+}
+
+#unique-glass-type-checkboxes-label {
+    color: white !important
+}
+/* Input and select styling */
+.unique-form-input,
+.unique-form-textarea,
+.unique-form-select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.unique-form-textarea {
+    height: 100px;
+}
+
+/* Glass type checkboxes styling */
+#unique-glass-type-checkboxes label {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.unique-form-checkbox {
+    margin-right: 10px;
+}
+
+/* Button styling */
+/* Button styling */
+.unique-submit-button {
+    background-color: #ff8c00 !important; /* Set button color to #ff8c00 */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.unique-submit-button:hover {
+    background-color: #2bc071 !important; /* Change hover state to a darker red */
+}
+
+
+/* Contact number wrapper */
+#unique-contact-number-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.unique-form-select {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Delivery banner styling */
+#unique-delivery-banner {
+    
+    background-size: cover;
+    background-position: center;
+    height: 1300px;
+    width: 40%;
+    border-radius: 12px;
+    
+    margin-top: -80px;
+}

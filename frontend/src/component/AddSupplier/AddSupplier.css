@@ -1,0 +1,68 @@
+/* Overall page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set a standard font */
+  background-color: #f4f4f4; /* Light background color */
+}
+
+/* Title styling */
+h1 {
+  text-align: center; /* Center align title */
+  color: black !important; /* Set title color to black */
+  margin: 20px 0; /* Margin above and below */
+}
+
+/* Form styling */
+form {
+  background: #000000 !important; /* White background for the form */
+  padding: 20px; /* Inner padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  max-width: 400px; /* Maximum width of the form */
+  margin: 0 auto; /* Center the form */
+}
+
+/* Label styling */
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space below each label */
+  color: black !important; /* Set label color to black */
+  font-weight: bold; /* Make labels bold for better visibility */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"] {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding inside the fields */
+  margin-bottom: 15px; /* Space below fields */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  color: black; /* Set input text color to black */
+  background-color: #fff; /* White background for input fields */
+}
+
+/* Button styling */
+button {
+  background-color: #007bff; /* Primary color */
+  color: white; /* White text */
+  padding: 10px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%; /* Full width for button */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Error message styling */
+.error {
+  color: red; /* Red color for error messages */
+  font-size: 12px; /* Smaller font size */
+  margin-top: -10px; /* Move closer to input field */
+}

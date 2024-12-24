@@ -1,0 +1,72 @@
+/* Employee.css */
+
+.employee-container {
+    max-width: 600px; /* Limit the width */
+    margin: 20px auto; /* Centering */
+    padding: 20px; /* Inner spacing */
+    border-radius: 8px; /* Rounded corners */
+    background: #ffffff; /* White background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    font-family: 'Arial', sans-serif; /* Font family */
+    transition: transform 0.3s ease; /* Animation on hover */
+  }
+  
+  .employee-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .employee-title {
+    text-align: center; /* Center title */
+    font-size: 2rem; /* Large font size */
+    color: #333; /* Dark color */
+    margin-bottom: 20px; /* Space below title */
+  }
+  
+  .employee-info {
+    margin-bottom: 20px; /* Space below employee info */
+  }
+  
+  .employee-info h2 {
+    font-size: 1.2rem; /* Font size */
+    color: #444; /* Slightly lighter */
+    margin: 10px 0; /* Vertical spacing */
+  }
+  
+  .employee-info h2 span {
+    font-weight: 400; /* Normal weight for text */
+    color: #6d57aa; /* Blue color for values */
+  }
+  
+  .button-container {
+    display: flex; /* Flex layout */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+  }
+  
+  .link {
+    text-decoration: none; /* Remove underline */
+    background: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for hover */
+  }
+  
+  .link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .button {
+    background: #dc3545; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Transition for hover */
+  }
+  
+  .button:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  

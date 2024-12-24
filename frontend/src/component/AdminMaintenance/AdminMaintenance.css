@@ -1,0 +1,122 @@
+/* General container styling */
+.admin-maintenance-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-maintenance-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styles */
+.admin-maintenance-container h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph styling for details display */
+.admin-maintenance-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.admin-maintenance-container p strong {
+    color: #333;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+    gap: 15px; /* Space between the buttons */
+    margin-top: 20px;
+}
+
+/* Button styles */
+.link-button,
+.btn-delete {
+    display: inline-block;
+    width: 150px; /* Equal width for both buttons */
+    padding: 12px 24px; /* Consistent padding */
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Update button styling */
+.link-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.link-button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete button styling */
+.btn-delete {
+    background-color: #ff4c4c;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #e04343;
+}
+
+/* Hide buttons when generating reports */
+@media print {
+    .button-container {
+        display: none; /* Hide buttons in print view */
+    }
+}
+
+/* Separator for spacing */
+.separator {
+    margin-top: 30px;
+    height: 1px;
+    background-color: #eee;
+    width: 100%;
+}
+
+/* Media query for responsive behavior */
+@media (max-width: 768px) {
+    .admin-maintenance-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .admin-maintenance-container h1 {
+        font-size: 18px;
+    }
+
+    .admin-maintenance-container p {
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .link-button,
+    .btn-delete {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}

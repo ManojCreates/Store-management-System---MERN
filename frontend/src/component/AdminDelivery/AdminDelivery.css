@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yy-admin-delivery-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.yy-delivery-title {
+    text-align: center;
+    color: #2a9d8f;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.yy-label {
+    color: #2a9d8f;
+}
+
+.yy-request-id, .yy-name, .yy-contact-number, 
+.yy-address, .yy-glass-type, .yy-quantity, 
+.yy-special-instruction, .yy-delivery-status, 
+.yy-assigned-driver, .yy-delivery-date {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Separator for Visual Spacing */
+.yy-separator {
+    border-top: 2px solid #eee;
+    margin: 40px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .yy-admin-delivery-container {
+        padding: 20px;
+    }
+
+    .yy-delivery-title {
+        font-size: 24px;
+    }
+
+    .yy-request-id, .yy-name, .yy-contact-number, 
+    .yy-address, .yy-glass-type, .yy-quantity, 
+    .yy-special-instruction, .yy-delivery-status, 
+    .yy-assigned-driver, .yy-delivery-date {
+        font-size: 16px;
+    }
+}
+
+/* Hide buttons when printing */
+@media print {
+    .yy-btn-delete, .yy-link-button {
+        display: none;
+    }
+}

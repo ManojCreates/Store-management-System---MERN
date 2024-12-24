@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cc-customer-delivery-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2a9d8f;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+strong {
+  color: #2a9d8f;
+}
+
+/* Contact and Delivery Info */
+.cc-name, .cc-contact-number, .cc-email, 
+.cc-address, .cc-glass-type, .cc-quantity, 
+.cc-special-instruction, .cc-preferred-delivery-date {
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Buttons Section */
+.cc-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.cc-btn-delete, .cc-link-button {
+  background-color: #e63946;
+  border: none;
+  padding: 12px 25px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cc-btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+.cc-link-button {
+  background-color: #2a9d8f;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cc-link-button:hover {
+  background-color: #21867a;
+}
+
+/* Separator for Visual Spacing */
+.cc-separator {
+  border-top: 2px solid #eee;
+  margin: 40px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cc-customer-delivery-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .cc-btn-delete, .cc-link-button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Hide buttons when printing */
+@media print {
+  .cc-button-container {
+    display: none; /* Hide the buttons when printing */
+  }
+}

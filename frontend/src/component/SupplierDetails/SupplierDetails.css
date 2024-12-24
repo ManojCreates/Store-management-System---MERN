@@ -1,0 +1,79 @@
+/* SupplierDetails.css */
+
+/* Main container styles */
+#supplier-details-container {
+  padding: 20px; /* Padding around the content */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px; /* Limit width of the container */
+  margin: 20px auto; /* Center the container with margin */
+}
+
+/* Title styles */
+#supplier-details-title {
+  font-size: 28px; /* Larger font size for the title */
+  color: #333; /* Dark text for contrast */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Input and button styles */
+.search-container {
+  display: flex; /* Flexbox layout for search and button */
+  justify-content: space-between; /* Space between input and button */
+  margin-bottom: 20px; /* Space below the search area */
+}
+
+#search-input {
+  padding: 10px; /* Padding for the input */
+  border: 1px solid #ccc; /* Border for the input */
+  border-radius: 4px; /* Rounded corners */
+  width: 75%; /* Input width */
+}
+
+/* Button styles */
+.search-button, .download-button, .whatsapp-button {
+  padding: 10px 15px; /* Padding for the buttons */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for clickable button */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+/* Button hover effect */
+.search-button:hover, .download-button:hover, .whatsapp-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Results styles */
+.results-container {
+  margin-top: 20px; /* Space above results */
+}
+
+.no-results-container {
+  margin-top: 20px; /* Space above no results message */
+}
+
+.no-results-message {
+  font-size: 18px; /* Larger font size for no results message */
+  color: #dc3545; /* Bootstrap danger color for emphasis */
+}
+
+/* Button container styles */
+.button-container {
+  margin-top: 20px; /* Space above the buttons */
+}
+
+/* Hide elements with no-print class during print */
+.no-print {
+  display: block; /* Ensure buttons are visible when not printing */
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+      display: none; /* Hide during printing */
+  }
+}

@@ -1,0 +1,132 @@
+/* Individual admin product card */
+.admin-product-card {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center align items */
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff; /* Background color */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  max-width: 350px; /* Max width for each card */
+  text-align: center; /* Center text alignment */
+  font-family: 'Poppins', sans-serif; /* Font style */
+}
+
+/* Hover effects */
+.admin-product-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Image styling */
+.admin-product-image {
+  border-radius: 15px; /* Rounded corners for image */
+  width: 100%; /* Responsive width */
+  height: 250px; /* Set height for consistency */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Space below image */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Image hover effect */
+.admin-product-card:hover .admin-product-image {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Text styling */
+.admin-product-name {
+  font-size: 1.5rem; /* Font size for product name */
+  color: #2d3436; /* Text color */
+  margin: 10px 0; /* Margin */
+  font-weight: bold; /* Bold font weight */
+}
+
+.admin-product-description {
+  font-size: 0.9rem; /* Font size for description */
+  color: #636e72; /* Text color */
+  margin: 10px 0; /* Margin */
+  padding: 0 10px; /* Padding for description */
+}
+
+.admin-product-specifications {
+  font-size: 1rem; /* Font size for specifications */
+  color: #636e72; /* Text color */
+  margin: 10px 0; /* Margin */
+}
+
+.admin-product-inventory {
+  font-size: 1.1rem; /* Font size for inventory */
+  color: #2d3436; /* Text color */
+  margin: 10px 0; /* Margin */
+}
+
+/* Low inventory styling */
+.admin-low-inventory {
+  color: red; /* Red color for low inventory */
+}
+
+/* Price styling */
+.admin-product-price {
+  font-size: 1.4rem; /* Font size for price */
+  color: #27ae60; /* Price color */
+  font-weight: bold; /* Bold font weight */
+  margin: 10px 0; /* Margin */
+}
+
+/* Button styling */
+.admin-update-button,
+.admin-delete-button {
+  padding: 10px 15px; /* Adjust padding */
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform effect */
+}
+
+.admin-update-button {
+  background-color: #007bff; /* Blue color for update button */
+}
+
+.admin-delete-button {
+  background-color: #e74c3c; /* Red color for delete button */
+}
+
+/* Button hover effects */
+.admin-update-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.admin-delete-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Warning message */
+.admin-low-inventory-message {
+  color: orange; /* Orange color for warning message */
+  font-weight: bold; /* Bold font weight */
+  margin-top: 5px; /* Margin for separation */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-product-card {
+    max-width: 90%; /* Full width on smaller screens */
+  }
+
+  .admin-product-name {
+    font-size: 1.3rem; /* Smaller font size on smaller screens */
+  }
+
+  .admin-product-description,
+  .admin-product-specifications,
+  .admin-product-inventory,
+  .admin-product-price {
+    font-size: 0.9rem; /* Smaller font size on smaller screens */
+  }
+}
